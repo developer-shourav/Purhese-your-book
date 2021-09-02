@@ -22,8 +22,6 @@ const searchBooks = () => {
 
 const showData = (values) =>{
      const books = values.docs ;
-     console.log(books.length);
-
      // error handaling and total result counting
      if(searchInput.value === ""){
            massage.innerText = `Search field cann't be Empty`;
@@ -41,7 +39,6 @@ const showData = (values) =>{
      }
 
      books.forEach(book => {
-           console.log(book);
            const div = document.createElement('div');
            div.innerHTML = `
            <div class="col h-100">
